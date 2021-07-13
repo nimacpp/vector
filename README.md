@@ -23,4 +23,6 @@ puts "hello world".green
 
 Output :
 
-
+```diff
++ hello world
+```
