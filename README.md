@@ -2,12 +2,15 @@
 Color Library in Ruby
 
 
+# install 
+
 for install Library in your gem 
 
 1. in shell write 'gem install vector-0.0.1.gem' and Enter
 2. check gem list to install 
 
-how to use in ruby 
+
+# Use lib 
 
 for use Library in ruby
 
