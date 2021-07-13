@@ -19,7 +19,7 @@ require 'Vector'
 
 2. and now you can use library look like this 
 
-puts "hello world".green
+puts "+ hello world".green
 
 Output :
 
