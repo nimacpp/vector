@@ -34,5 +34,7 @@ gem install chilkat
 cd vector
 ruby main.rb
 ```
-
+### Contact us
+- Channel Rubika   : https://rubika.ir/niox_team
+- Channel Telegram : https://t.me/niox_team
 
