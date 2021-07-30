@@ -18,11 +18,13 @@ Menu
 >
 
 </pre>
-```
+
+## Install
+```bash
 gem install chilkat
 ```
 
-# after
+## Run
 ```
 cd vector
 $ ruby main.rb
