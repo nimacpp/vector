@@ -1,6 +1,13 @@
 require_relative 'lib/Decrypt.rb'
 require_relative 'lib/Encrypt.rb'
-
+puts "
+__     __        _             
+\\ \\   / /__  ___| |_ ___  _ __ 
+ \\ \\ / / _ \\/ __| __/ _ \\| '__|
+  \\ V /  __/ (__| || (_) | |   
+   \\_/\\____|\\___|\\__\\___/|_|   
+                               
+"
 
 
 puts "     Menu "
