@@ -18,15 +18,18 @@ Menu
 >
 
 </pre>
+## Operating Systems Tested
+- Kali Linux 2020.1
+- Windows 10
+- Ubuntu 20.04
 
-## Install
+
+## Install 
 ```bash
+git clone https://github.com/nimacpp/vector.git
 gem install chilkat
+cd vector
+ruby main.rb
 ```
 
-## Run
-```
-cd vector
-$ ruby main.rb
-```
 
