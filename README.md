@@ -34,6 +34,9 @@ gem install chilkat
 cd vector
 ruby main.rb
 ```
+## if can't install lib 
+Go to website and install the version you need
+-website : https://www.chilkatsoft.com/ruby.asp
 ### Contact us
 - Channel Rubika   : https://rubika.ir/niox_team
 - Channel Telegram : https://t.me/niox_team
