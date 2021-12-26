@@ -1,4 +1,5 @@
 require 'chilkat'
+require_relative 'colorama.rb'
 class Dec
 
 @ivHex = "000102030405060708090A0B0C0D0E0F"
@@ -17,9 +18,9 @@ success = crypt.CkEncryptFile(inFile,outFile)
 
 File.delete(inFile) if File.exist?(inFile)
 if (success != true)
-    print crypt.lastErrorText() + "\n";
-    
-    exit
+    print crypt.lastErrorText()+"\n".red;
+else
+    puts "[+] success ... complete #{inFile}".green
 
 end
 end
