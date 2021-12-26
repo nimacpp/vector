@@ -46,6 +46,7 @@ print" ┌─["+"Vector".red+"~ #Decrypt".green+" Dir:#{Dir.pwd} ]
 input = gets.chomp
 if input == ":q"
     exit
+end
 input = Dir[input+'/**/*.*']
 dec = Dec.new
 for i in input
@@ -61,6 +62,7 @@ print" ┌─["+"Vector".red+"~ #Encrypt".green+" Dir:#{Dir.pwd} ]
 input = gets.chomp
 if input == ":q"
     exit
+end
 input = Dir[input+'/**/*.*']
 
 # Encrypt 
