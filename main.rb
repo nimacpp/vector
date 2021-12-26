@@ -5,14 +5,14 @@ require_relative 'lib/colorama.rb'
 system 'clear'
 
 banner ="
-██╗░░░██╗███████╗░█████╗░████████╗░█████╗░██████╗░
-██║░░░██║██╔════╝██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗
-╚██╗░██╔╝█████╗░░██║░░╚═╝░░░██║░░░██║░░██║██████╔╝
-░╚████╔╝░██╔══╝░░██║░░██╗░░░██║░░░██║░░██║██╔══██╗
-░░╚██╔╝░░███████╗╚█████╔╝░░░██║░░░╚█████╔╝██║░░██║
-░░░╚═╝░░░╚══════╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝ ".red
+
+  ██╗░░░██╗███████╗░█████╗░████████╗░█████╗░██████╗░
+  ██║░░░██║██╔════╝██╔══██╗╚══██╔══╝██╔══██╗██╔══██╗
+  ╚██╗░██╔╝█████╗░░██║░░╚═╝░░░██║░░░██║░░██║██████╔╝
+  ░╚████╔╝░██╔══╝░░██║░░██╗░░░██║░░░██║░░██║██╔══██╗
+  ░░╚██╔╝░░███████╗╚█████╔╝░░░██║░░░╚█████╔╝██║░░██║
+  ░░░╚═╝░░░╚══════╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝".red+" Ver 2.0".green
 puts banner+"
-Ver 1.3".green+"
 
 \t[卐] Choose one of the options below".red+" 
 
@@ -37,14 +37,16 @@ case out
 when "1"
 system 'clear'
 puts banner+"
-\n\t Choose Decrypt .\n".brown+" 
+\n\t Choose Decrypt . [ :q ] To cancel \n".brown+" 
  [卐] Enter Dirctory . \n".red 
 
 # Decrypt
-print" ┌─["+"Vector".red+"~ #Decrypt".green+"]
+print" ┌─["+"Vector".red+"~ #Decrypt".green+" Dir:#{Dir.pwd} ]
  └╼ 卐 "
 input = gets.chomp
-input = Dir[input+'/**/*']
+if input == ":q"
+    exit
+input = Dir[input+'/**/*.*']
 dec = Dec.new
 for i in input
   dec.cry(i)
@@ -52,12 +54,14 @@ end
 when "2"
 system 'clear'
 puts banner+"
-\n\t Choose Nncrypt .\n".brown+"
+\n\t Choose Nncrypt . [ :q ] To cancel \n".brown+"
  [卐] Enter Dirctory . \n".red
-print" ┌─["+"Vector".red+"~ #Encrypt".green+"]
+print" ┌─["+"Vector".red+"~ #Encrypt".green+" Dir:#{Dir.pwd} ]
  └╼ 卐 "
 input = gets.chomp
-input = Dir[input+'/**/*']
+if input == ":q"
+    exit
+input = Dir[input+'/**/*.*']
 
 # Encrypt 
 dec = Enc.new
@@ -87,7 +91,7 @@ puts banner+"
 \n\t Help .\n".brown
 puts "
 To install chilkat lib  => "+"https://www.chilkatsoft.com/ruby.asp\n".underline+"
-Feed back => "+"T.me/niox_team".underline+" or "+"rubika.ir/niox_team".underline
+Feed back => "+"github.com/nimacpp\n".underline
 print "Go to menu... ".green
 gets
 system("ruby main.rb")
