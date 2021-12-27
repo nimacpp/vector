@@ -7,7 +7,7 @@
 ░╚████╔╝░██╔══╝░░██║░░██╗░░░██║░░░██║░░██║██╔══██╗
 ░░╚██╔╝░░███████╗╚█████╔╝░░░██║░░░╚█████╔╝██║░░██║
 ░░░╚═╝░░░╚══════╝░╚════╝░░░░╚═╝░░░░╚════╝░╚═╝░░╚═╝ 
-Ver 1.0
+Ver 2.0
 
 	[卐] Choose one of the options below 
 
@@ -38,6 +38,5 @@ ruby main.rb
 Go to website and install the version you need
 -website : https://www.chilkatsoft.com/ruby.asp
 ### Contact us
-- Channel Rubika   : https://rubika.ir/niox_team
-- Channel Telegram : https://t.me/niox_team
+- mail : https://Nima.cpp@outlook.com
 
